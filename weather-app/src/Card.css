@@ -1,0 +1,54 @@
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 80vh;
+   
+    width: 30%;
+    flex-wrap: wrap;
+    position: relative;
+    /* background: linear-gradient(to right, #b92b27, #1565c0);
+     */
+     background: transparent;
+     color: white;
+     
+   
+    
+}
+
+.sub-card{
+    position: absolute;
+    background:transparent;
+    /* border-right: 2px solid black; */
+    margin: 0 0.5rem;
+    padding: 0 0.5rem;
+    
+    
+    
+}
+
+.weather{
+    font-size: 1.5rem;
+    font-weight: 300;
+    top:1rem;
+    left:10rem;
+    display: flex;
+    /* transform:translate(-25%,-20%);  */
+}
+i{
+    font-size: 3rem;
+}
+.temperature{
+    font-size: 5rem;
+    font-weight: 100;
+    top:0rem;
+    left:6rem;
+    
+}
+.date-day{
+    font-size: 1.5rem;
+    top:20rem;
+    left:70%;
+    
+   
+}
