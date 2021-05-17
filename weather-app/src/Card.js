@@ -11,25 +11,26 @@ function Card(props) {
     return (
         
         <div className="card">
-            <div className="weather sub-card">
-                <i class="far fa-sun"/>
-                <p className="wthr">{props.weather}</p>
-                <p className="place">{props.place}</p>
-            </div>
-            
-            <div className="temperature sub-card">
-                <h1 className="temp">{props.temperature}</h1>
-                
-            </div>
-            <div className="date-day sub-card">
-                <h2 className="day">{week[day]}</h2>
-                <h3 className="date">{date} {year[month]}</h3>
-                
-            </div>
-            
-            
+            <div className="header">
+                <div className="place">{props.place}</div>
+                <div className="day-date">
+                <div className="day">{week[day]}</div>
+                <div className="date">{date} {year[month]}</div>
+                </div>
+               
 
+            </div>
+            <div className="middle sub-card">
+                <div className="temp">{props.temperature}<span className="deg">oC</span></div>
+            </div>
+            <div className="footer sub-card">
+                <div className="icon">{props.icon}</div>
+                <div className="weather">{props.weather}</div>
+            </div>
+            <button className="place-btn">Change place</button>
+             
             
+    
             
         </div>
     )

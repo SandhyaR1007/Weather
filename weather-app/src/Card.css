@@ -1,54 +1,62 @@
+:root{
+    --font-color:white;
+}
 .card{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    height: 80vh;
-   
-    width: 30%;
     flex-wrap: wrap;
-    position: relative;
-    /* background: linear-gradient(to right, #b92b27, #1565c0);
-     */
-     background: transparent;
-     color: white;
-     
+    width:100%;
+    font-size:1.5rem;
+    margin:1rem auto;
+    color: var(--font-color);
    
-    
+    /* justify-content: space-between; */
+   
 }
 
-.sub-card{
-    position: absolute;
-    background:transparent;
-    /* border-right: 2px solid black; */
-    margin: 0 0.5rem;
-    padding: 0 0.5rem;
-    
-    
-    
+.header{
+    height: 3.5rem;
+    margin:1rem;
+    padding: 0.5rem;
+    display:flex;
+    justify-content: space-between;
 }
-
-.weather{
-    font-size: 1.5rem;
-    font-weight: 300;
-    top:1rem;
-    left:10rem;
+.place{
+    font-size: 2rem;
+}
+.day{
+    font-size: 2rem;
+}
+.middle{
+    font-size: 6rem;
+    margin:1rem auto;
+    padding:0.5rem;
     display: flex;
-    /* transform:translate(-25%,-20%);  */
+    justify-content: center;
 }
-i{
-    font-size: 3rem;
-}
-.temperature{
+.deg{
     font-size: 5rem;
-    font-weight: 100;
-    top:0rem;
-    left:6rem;
+    padding-bottom: 2rem;
+}
+.footer{
+    
+    height: 5rem;
+    padding: 0.3rem;
+    display: flex;
+    flex-direction: column;
     
 }
-.date-day{
-    font-size: 1.5rem;
-    top:20rem;
-    left:70%;
-    
-   
+.place-btn{
+    margin:0.7rem auto;
+    width:10rem;
+    padding: 0.6rem;
+    font-size: 1.2rem;
+    border:none;
+    background-color: rgba(0, 0, 0,0.3);
+    color: var(--font-color);
+    cursor: pointer;
+    border-radius: 0.5rem;
+}
+.place-btn:hover{
+    background-color: rgba(0, 0, 0,0.5);
 }

@@ -1,11 +1,22 @@
 
 .App {
   text-align: center;
-  width: 30%;
-  /* border: 1px solid black; */
+  width: 25%;
   margin: 5rem auto;
   border-radius: 1rem;
-  background:rgba(0, 0, 0,0.4)
+  background:rgba(0, 0, 0,0.4);
+  /* background-color: lightpink; */
+  display:flex;
+  flex-direction: column;
+  height: 30rem;
   
 }
+.nav{
+  background-color: cornflowerblue;
+}
 
+@media screen and (max-width:600px) {
+  .App{
+    width: 80%;
+  }
+}
