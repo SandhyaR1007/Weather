@@ -60,3 +60,9 @@
 .place-btn:hover{
     background-color: rgba(0, 0, 0,0.5);
 }
+.img{
+    height: 100px;
+    width: 100px;
+   
+    color:black;
+}
