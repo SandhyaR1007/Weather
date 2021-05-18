@@ -31,14 +31,13 @@ function Card(props) {
 
             </div>
             <div className="middle sub-card">
-                <div className="temp">{props.temperature}<span className="deg">oC</span></div>
+                <div className="temp">{props.temperature}<span className="deg">℃</span></div>
             </div>
             <div className="footer sub-card">
                
-            <i class={props.icon}></i>
+            <i className={`${props.icon} icon`}></i>
            
-            
-                <div className="weather">{props.weather}</div>
+            <div className="weather">{props.weather}</div>
             </div>
             
              

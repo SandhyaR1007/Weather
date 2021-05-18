@@ -1,6 +1,6 @@
 import './App.css';
 import Card from "./Card";
-import "./weather1.jpg";
+
 import { useState, useEffect } from "react";
 
 
@@ -16,6 +16,7 @@ function App() {
   const [city,setCity] = useState("")
   const [result,setResult] = useState("delhi")
   const [icon,SetIcon] = useState("fas fa-sun")
+  const [isHidden,ToggleHidden] = useState(true)
   
 
   const cityFinder = (e)=>{
@@ -67,41 +68,47 @@ function App() {
     setResult(city)
     console.log("working")
     iconHandler()
-    console.log("fine")
-
-    
-    
+    console.log("fine") 
    
   }
+
+  
   
 
   
-  //   try {
-  //     useEffect(() => {
+  // try {
+  //   useEffect(() => {
+  //     setTimeout(()=>{
   //       fetch(
-  //        `https://api.weatherbit.io/v2.0/current?city=${result}&country=india&key=140c2a81818b4c839f4c030c37e1d794`
-  //       )
-  //         .then((res) => res.json())
-  //         .then((json) => setDisplay({"desc":json.data[0].weather.description,
-  //         "temp":json.data[0].temp,
-  //         "icon":json.data[0].weather.code,
-  //        "city":json.data[0].city_name}));
-  //     });
-  //   } catch (error) {
-  //    console.log("not working");
-  //  }
+  //         `https://api.weatherbit.io/v2.0/current?city=${result}&country=india&key=140c2a81818b4c839f4c030c37e1d794`
+  //        )
+  //          .then((res) => res.json())
+  //          .then((json) => setDisplay({"desc":json.data[0].weather.description,
+  //          "temp":json.data[0].temp,
+  //          "icon":json.data[0].weather.code,
+  //         "city":json.data[0].city_name}));
+  //      },2000);
+
+  //     })
+     
+  // } catch (error) {
+  //  console.log("not working");
+  // }
   return (
     <div className="App" >
-            <form className="search-area" onSubmit={resultSetter}>
-                <input className="search-place" placeholder="enter a city" onChange={cityFinder}/>
-                <button className="search-btn" type="submit">Search</button>
-    </form>
+      <i className="fas fa-plus add-btn" onClick={()=>ToggleHidden(!isHidden)}></i>
+     
+      <form className="search-area" onSubmit={resultSetter} style={isHidden ? { display:'none'} : {display : 'block'}}>
+          <input className="search-input" placeholder="enter a city" onChange={cityFinder}/>
+          <button className="search-btn" type="submit">Search</button>
+      </form>
     
       
       <Card temperature={display.temp} weather={display.desc} place={display.city} icon={icon}/>
       
       
     </div>
+    
   );
 }
 
