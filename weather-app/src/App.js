@@ -7,15 +7,15 @@ import { useState, useEffect } from "react";
 function App() {
   const [display,setDisplay] = useState({
     "desc":"Haze",
-    "temp":38,
-    "icon":800,
+    "temp":24,
+    "icon":701,
     "city":"Delhi" 
 
   })
   const src = "clear.png"
   const [city,setCity] = useState("")
   const [result,setResult] = useState("delhi")
-  const [icon,SetIcon] = useState("fas fa-sun")
+  const [icon,SetIcon] = useState("fas fa-smog")
   const [isHidden,ToggleHidden] = useState(true)
   
 
@@ -76,27 +76,33 @@ function App() {
   
 
   
-  // try {
-  //   useEffect(() => {
-  //     setTimeout(()=>{
-  //       fetch(
-  //         `https://api.weatherbit.io/v2.0/current?city=${result}&country=india&key=140c2a81818b4c839f4c030c37e1d794`
-  //        )
-  //          .then((res) => res.json())
-  //          .then((json) => setDisplay({"desc":json.data[0].weather.description,
-  //          "temp":json.data[0].temp,
-  //          "icon":json.data[0].weather.code,
-  //         "city":json.data[0].city_name}));
-  //      },2000);
+   /*try {
+     useEffect(() => {
+       setTimeout(()=>{
+         fetch(
+           `https://api.weatherbit.io/v2.0/current?city=${result}&country=india&key=140c2a81818b4c839f4c030c37e1d794`
+          )
+            .then((res) => res.json())
+            .then((json) => setDisplay({"desc":json.data[0].weather.description,
+            "temp":json.data[0].temp,
+            "icon":json.data[0].weather.code,
+         "city":json.data[0].city_name}));
+        },2000);
 
-  //     })
+       })
      
-  // } catch (error) {
-  //  console.log("not working");
-  // }
+   } catch (error) {
+    console.log("not working");
+   }*/
   return (
     <div className="App" >
+      <div className="nav">
+      <i class="fas fa-bars ham-btn"></i>
       <i className="fas fa-plus add-btn" onClick={()=>ToggleHidden(!isHidden)}></i>
+
+      </div>
+      
+      
      
       <form className="search-area" onSubmit={resultSetter} style={isHidden ? { display:'none'} : {display : 'block'}}>
           <input className="search-input" placeholder="enter a city" onChange={cityFinder}/>
