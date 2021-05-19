@@ -76,7 +76,7 @@ function App() {
   
 
   
-   /*try {
+   try {
      useEffect(() => {
        setTimeout(()=>{
          fetch(
@@ -93,7 +93,7 @@ function App() {
      
    } catch (error) {
     console.log("not working");
-   }*/
+   }
   return (
     <div className="App" >
       <div className="nav">
