@@ -121,7 +121,7 @@
 }
 @media screen and (max-width:600px) {
   .App{
-    /* width: 20rem; */
+    width: 20rem;
     font-size: 2rem;
     margin: 3rem auto;
     align-self: center;
@@ -134,7 +134,7 @@
 }
 @media screen and (max-width:400px) {
   .App{
-    /* width: 17rem; */
+    width: 20rem;
     font-size: 2rem;
     margin: 3rem auto;
     
