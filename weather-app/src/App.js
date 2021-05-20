@@ -101,6 +101,7 @@ function App() {
       <i className="fas fa-plus add-btn" onClick={()=>ToggleHidden(!isHidden)}></i>
 
       </div>
+     
       
       
      
@@ -108,7 +109,13 @@ function App() {
           <input className="search-input" placeholder="enter a city" onChange={cityFinder}/>
           <button className="search-btn" type="submit">Search</button>
       </form>
-    
+
+      {/* <div className="info-div">
+      “Lorem ipsum” dummy text is used by many web-developers to test how their HTML ... Just expand lorem or lipsum abbreviations to get the following snippet:
+      “Lorem ipsum” dummy text is used by many web-developers to test how their HTML ... Just expand lorem or lipsum abbreviations to get the following snippet:
+      “Lorem ipsum” dummy text is used by many web-developers to test how their HTML ... Just expand lorem or lipsum abbreviations to get the following snippet:
+      </div>
+     */}
       
       <Card temperature={display.temp} weather={display.desc} place={display.city} icon={icon}/>
       

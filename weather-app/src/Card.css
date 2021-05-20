@@ -9,15 +9,15 @@
     font-size:2rem;
     margin:1rem auto;
     color: var(--font-color);
+    
    
     /* justify-content: space-between; */
    
 }
 
 .header{
-    height: 3.5rem;
     margin:0.5rem;
-    padding: 0.5rem;
+    padding: 0.3rem;
     display:flex;
     justify-content: space-between;
 }
@@ -25,7 +25,7 @@
 .middle{
     font-size: 5rem;
     margin:0.5rem auto;
-    padding:0.5rem;
+    padding:0.3rem;
     display: flex;
     justify-content: center;
 }
@@ -34,8 +34,7 @@
     padding-bottom: 2rem;
 }
 .footer{
-    
-    height: 5rem;
+    margin:0.5rem;
     padding: 0.3rem;
     display: flex;
     flex-direction: column;
@@ -55,6 +54,7 @@
 @media screen and (max-width:600px) {
     .card{
         font-size: 1.5rem;
+        display: flex;
     }
     .deg, .middle, .icon,.weather{
         font-size: 3rem;
