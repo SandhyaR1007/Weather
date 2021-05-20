@@ -58,9 +58,20 @@
     }
     .deg, .middle, .icon,.weather{
         font-size: 3rem;
-        margin: 1.5rem 0rem;
+        margin: 1rem 0rem;
     }
     
     
   }
+  /* @media screen and (max-width:400px) {
+    .App{
+      width: 15rem;
+      font-size: 2rem;
+      margin: 3rem auto;
+      
+      align-self: center;
+      
+      
+    }
+  } */
   

@@ -75,6 +75,8 @@
   
   
   
+  
+  
 }
 .search-input{
   padding: 0.5rem;
@@ -87,6 +89,7 @@
   margin:0rem 0.3rem;
   font-family: 'Noto Sans JP', sans-serif;
   color: var(--white-color);
+  width:50%;
   
   
 
@@ -126,6 +129,9 @@
     
     
   }
+  .search-input{
+    width: 80%;
+  }
 }
 @media screen and (max-width:400px) {
   .App{
@@ -136,5 +142,8 @@
     align-self: center;
     
     
+  }
+  .search-input{
+    width: 60%;
   }
 }
