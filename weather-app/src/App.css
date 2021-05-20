@@ -133,9 +133,9 @@
 }
 @media screen and (max-width:400px) {
   .App{
-    width: 15rem;
+    width: 17rem;
     font-size: 2rem;
-    margin: 3rem auto;
+    margin: 2rem auto;
     
     align-self: center;
     
